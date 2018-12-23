@@ -54,45 +54,6 @@
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
-                <!--<plugin>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <executions>
-                        <execution>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>copy-dependencies</goal>
-                            </goals>
-                            <configuration>
-                                <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                <includeArtifactIds>child.one</includeArtifactIds>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-shade-plugin</artifactId>
-                    <version>2.4.2</version>
-                    <executions>
-                        <execution>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>shade</goal>
-                            </goals>
-                            <configuration>
-                                <transformers>
-                                    <transformer
-                                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                        <manifestEntries>
-                                            <Main-Class>com.sitric.Solution</Main-Class>
-                                            <Class-Path>lib/child.one-1.0-SNAPSHOT.jar</Class-Path>
-                                        </manifestEntries>
-                                    </transformer>
-                                </transformers>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>-->
             </plugins>
         </pluginManagement>
     </build>
